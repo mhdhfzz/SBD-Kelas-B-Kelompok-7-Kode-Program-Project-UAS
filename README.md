@@ -31,9 +31,8 @@ Import Database
 ```
     
 ## Akun
-- admin
-nim : admin
-password : 123
-- user
-nim : 2111512006
-password : 123
+### Admin
+admin:123
+
+### user
+2111512006:123
