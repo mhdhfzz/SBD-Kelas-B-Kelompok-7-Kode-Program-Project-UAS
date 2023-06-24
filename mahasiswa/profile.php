@@ -118,7 +118,7 @@ if(isset($_FILES["fileImg"]["name"])){
     </script>
 
     <!-- My Javascript -->
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 
