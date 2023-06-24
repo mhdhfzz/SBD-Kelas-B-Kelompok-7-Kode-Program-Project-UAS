@@ -218,7 +218,7 @@ if(isset($_POST["tambah"]) && isset($_POST["id_dosenkelas"])){
 
     <!-- partial -->
     <script src='https://unpkg.com/@popperjs/core@2'></script>
-    <script src="./script.js"></script>
+    <script src="../js/script.js"></script>
 
     <script>
     function konfirmasi() {
