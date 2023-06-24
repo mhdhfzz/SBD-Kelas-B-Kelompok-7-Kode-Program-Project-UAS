@@ -35,7 +35,7 @@ if(isset($_FILES["fileImg"]["name"])){
 
     move_uploaded_file($src, $target);
 
-    $query = "UPDATE mhs SET gambar = '$imageName' WHERE nim = $id";
+    $query = "UPDATE mhs SET gambar = '$imageName' WHERE nim = '$id'";
     mysqli_query($conn, $query);
 
     // header("Location: profile.php?nim=");
