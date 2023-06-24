@@ -30,3 +30,10 @@ Import Database
   Di dalam folder DB terdapat file krs.sql
 ```
     
+## Akun
+- admin
+nim : admin
+password : 123
+- user
+nim : 2111512006
+password : 123
