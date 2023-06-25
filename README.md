@@ -14,7 +14,7 @@ Ini merupakan Source Code Project UAS Sistem Basis Data B Kelompok 7
 - 2111513010 M. Azzukhruf
 - 2111512022 Denny Rianto
 - 2111511014 Yazidah Nur Lubis
-- 201151 Hadi
+- 2011512026 Hadi Pranata Sembiring
 ## Technology Use
 ### Front End :
 html, css, javascript
