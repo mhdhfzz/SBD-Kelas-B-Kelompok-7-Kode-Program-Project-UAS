@@ -36,3 +36,13 @@ admin:123
 
 ### user
 2111512006:123
+
+## Website Pages:
+### Login:
+nim, password
+### Home:
+about, dosen, kontak
+### Panel Mahasiswa
+profile, krs
+### Panel Admin
+dosen, matakuliah, kelas, mahasiswa
