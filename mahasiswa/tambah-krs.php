@@ -19,14 +19,15 @@ if(isset($_POST["tambah"]) && isset($_POST["id_dosenkelas"])){
                 alert('KRS Berhasil Ditambahkan');
             </script>  
         ";
+        header("Location: krs.php?nim=$nim");
     }else {
         echo "
         <script>
             alert('KRS Gagal Ditambahkan');
         </script>  
         ";
+        header("Location: tambah-krs.php?nim=$nim");
     }
-    header("Location: krs.php?nim=$nim");
 }
 
 ?>
@@ -204,7 +205,7 @@ if(isset($_POST["tambah"]) && isset($_POST["id_dosenkelas"])){
                     <div>
                         <h1>
                             <button><a href="krs.php?nim=<?= $nim ?>">Back</a></button>
-                            <button href="hapus-krs.php?nim=<?= $nim ?>" name="tambah" class=""><i
+                            <button href="" name="tambah" class=""><i
                                     class="ri-add-fill"></i>
                                 Tambah KRS</button>
                         </h1>
@@ -218,7 +219,6 @@ if(isset($_POST["tambah"]) && isset($_POST["id_dosenkelas"])){
 
     <!-- partial -->
     <script src='https://unpkg.com/@popperjs/core@2'></script>
-    <script src="../js/script.js"></script>
 
     <script>
     function konfirmasi() {
