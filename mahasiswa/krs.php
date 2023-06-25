@@ -169,7 +169,13 @@ $mhs = query("SELECT * FROM mhs WHERE nim = '$nim'")[0];
                     <form action="" method="post" onsubmit="return konfirmasi()">
                         <?php
                                 $i = 1;
-                                $sqlSelect = "SELECT * FROM mhs, mata_kuliah, kelas, dosenkelas, krs, dosen, status WHERE mhs.nim = $nim AND  dosen.nip = dosenkelas.nip AND kelas.kode_matkul = mata_kuliah.kode_matkul AND kelas.kode_kelas = dosenkelas.kode_kelas AND krs.id_dosenkelas = dosenkelas.id_dosenkelas AND status.id_status = krs.id_status AND krs.id_dosenkelas = dosenkelas.id_dosenkelas";
+                                $sqlSelect = "SELECT dk.kode_kelas, mk.nama_matkul, mk.sks, d.nama, s.setatus, k.id_dosenkelas FROM krs AS k
+INNER JOIN dosenkelas AS dk ON k.id_dosenkelas = dk.id_dosenkelas
+INNER JOIN kelas AS kl ON kl.kode_kelas = dk.kode_kelas
+INNER JOIN mata_kuliah AS mk ON mk.kode_matkul = kl.kode_matkul
+INNER JOIN dosen AS d ON d.nip = dk.nip
+INNER JOIN status AS s ON s.id_status = k.id_status
+WHERE k.nim = '$nim'";
                                 $result = mysqli_query($conn,$sqlSelect);
                                 while($data = mysqli_fetch_array($result)){
                                 ?>
@@ -204,7 +210,7 @@ $mhs = query("SELECT * FROM mhs WHERE nim = '$nim'")[0];
 
     <!-- partial -->
     <script src='https://unpkg.com/@popperjs/core@2'></script>
-    <script src="../js/script.js"></script>
+    <script src="./script.js"></script>
 
     <!-- Feather Icons -->
     <script>
