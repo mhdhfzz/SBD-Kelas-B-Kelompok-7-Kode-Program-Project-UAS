@@ -5,10 +5,6 @@ Ini merupakan Source Code Project UAS Sistem Basis Data B Kelompok 7
 [Hasil Project](https://sbd7.000webhostapp.com/)
 
 
-## Authors
-
-[@muhammadhafiz.6](https://instagram.com/muhammadhafiz.6)
-
 ## Group Members SBD7
 - 2111512006 Muhammad Hafiz
 - 2111513010 M. Azzukhruf
